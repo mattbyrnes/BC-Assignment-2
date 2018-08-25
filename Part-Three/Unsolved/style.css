@@ -1,0 +1,65 @@
+body {
+    background: #000;
+}
+
+h1 {
+    font-size: 22px;
+    font-family: 'Sonsie One', sans-serif;
+    margin:10px auto;
+    color: #fff;
+    width: 100%;
+    text-align: center;
+    display: block;
+
+}
+
+main {
+    display: grid;
+    grid-gap: 10px;
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: repeat(2, 150px);
+    box-sizing: border-box;
+    margin: auto;
+}
+
+main img {
+    display: grid;
+    grid-row: span 1;
+    grid-column: span 1;
+    width: 150px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+.off-half {
+    grid-column: span 2;
+    margin: auto;
+}
+
+.desk {
+    display: none;
+}
+
+
+@media only screen and (min-width: 600px) {
+
+    main {
+        display: grid;
+        grid-template-rows: repeat(5, auto);
+        grid-template-columns: repeat(5, 150px);
+    }
+
+    .off-half {
+        grid-column: span 1;
+        margin-left: 100px;
+        
+    }
+   
+    .desk {
+        display: initial;
+    }
+
+}
+
+
+
