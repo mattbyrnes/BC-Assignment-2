@@ -1,0 +1,145 @@
+body {
+    background: url(assets/bckgrnd.png);
+    font-family: 'Open Sans', sans-serif;
+    margin: 0px;
+}
+
+p {
+    font-size: 13px;
+}
+
+h1, h2 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 5px 0px;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+h2 {
+    font-weight: 700;
+}
+
+main {
+    display: grid;
+    grid-template-rows: repeat(6, auto);
+    grid-template-columns: repeat(1, 1fr);
+}
+
+section {
+    display: grid;
+    grid-row: span 1;
+    grid-column: span 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#avatar {
+    display: block;
+    position: relative;
+    text-align: center;
+}
+
+#avatar img {
+    width: 200px;
+    border: 2px solid#2c5fa8;
+    border-radius: 100px;
+    position: relative;
+    margin: auto;
+}
+
+#social {
+    display: block;
+    position: relative;
+    text-align: center;
+}
+
+#social img {
+    width: 30px;
+    height: 30px;
+    margin: auto 20px auto 0px;
+}
+
+#work {
+    background: rgba(150, 150, 150, .6);
+}
+
+#work h1 {
+    display: inline-flex;
+    width: 100%;
+    color: #fff;
+    font-weight: 400;
+    border-bottom: 1px solid #fff;
+    padding-bottom: 20px;
+}
+
+#work img {
+    margin: 30px;
+    background: #000;
+    width: 100vw;
+    max-width: 300px;
+    height: 160px;
+    object-fit: cover;
+    margin: 30px auto;
+}
+
+#work h1 img {
+    all: revert;
+    margin: 0px;
+    background: none;
+    width: auto;
+    height: auto;
+}
+
+footer {
+    background: rgba(150, 150, 150, .6);
+    border-top: 1px solid #fff;
+    color: #fff;
+    text-align: center;
+    font-size: 10px;
+    padding: 20px;
+    box-sizing: border-box;
+    width: 100vw;
+}
+
+@media only screen and (min-width: 600px) {
+
+    main {
+        display: grid;
+        grid-template-rows: repeat(6, auto);
+        grid-template-columns: repeat(2, 1fr);
+        height: 100%;
+    }
+
+    section {
+        box-sizing: border-box;
+    }
+
+    #avatar {
+        grid-row: span 3;
+        grid-column: 2;
+    }
+
+    #avatar img {
+        position: absolute;
+        bottom: -50px;
+    }
+
+    #social {
+        text-align: left;
+    }
+
+    #work {
+        grid-column: span 2;
+    }
+
+    #work h1 {
+        grid-column: span 3;
+    }
+
+    #work img {
+        grid-column: span 1;
+    }    
+
+}
