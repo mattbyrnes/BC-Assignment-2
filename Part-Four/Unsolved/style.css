@@ -1,0 +1,165 @@
+  body {
+    height: 98vh;
+    font-family: 'Montserrat', sans-serif;
+    background: #372426;
+  }
+  
+  main {
+    display: grid;
+    height: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+    margin: auto;
+    grid-gap: 2px;
+    color: white;
+  }
+  
+  .container {
+    display: grid;
+    grid-template-rows: repeat(6, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    background: #333;
+    box-sizing: border-box;
+  }
+  
+  .box {
+    height: 100%;
+    background-color: #999;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-row: span 1;
+    grid-column: span 1;
+    padding: 14px;
+    box-sizing: border-box;
+
+  }
+  
+  .one {
+    background: #ee323e;
+    text-transform: uppercase;
+    font-size: 38px;
+    line-height: 50px;
+  }
+
+  .two {
+    background: #6eb5a3; 
+    line-height: 24px;   
+  }
+
+  .three {
+    grid-column: span 2;
+    background-image: url("images/tie.png");
+    height: 160px;
+  }
+
+  .four {
+    background-image: url("images/sign.jpg");
+  }
+
+  .five {
+    background: #6eb5a3; 
+    line-height: 24px;   
+  }
+
+  .six {
+    grid-column: span 2;  
+    background-image: url("images/moped.jpg");
+    height: 160px;
+  }
+
+  /* .seven {
+    grid-column: span 2;  
+    background-image: url("images/sax.jpg");
+    height: 160px;
+  } */
+
+  @media only screen and (min-width: 600px) {
+  
+    .container {
+      display: grid;
+      grid-template-rows: repeat(4, 1fr);
+      grid-template-columns: repeat(5, 1fr);
+      background: #000;
+    }
+  
+    .one {
+      grid-row: span 1;
+      grid-column: span 1;
+      grid-area: 1;
+    }
+    
+    .two {
+        grid-area: 2;
+      grid-row: span 2;  
+      grid-column: span 1;
+      
+    }
+    
+    .three {
+      grid-area: 3;  
+      grid-row: span 1;  
+      grid-column: span 1;
+      background-image: url("images/sax.jpg");
+      
+    }
+
+    .four {
+        grid-row: span 2;  
+        grid-column: span 1;
+        grid-area: 4;
+        background: blue;
+        background-image: none;
+      }
+
+    .five {
+        grid-row: span 2;  
+        grid-column: span 2;
+        grid-area: 5;
+        background-image: url("images/moped.jpg");
+    }
+
+    .six {
+        grid-row: span 2;  
+        grid-column: span 1;
+        grid-area: 6;
+        background: red;
+    }
+
+    .seven {
+        grid-area: 7;
+        background: yellow;
+        grid-row: span 2;  
+        grid-column: span 1;
+    }
+
+    .eight {
+        grid-area: 8;
+        grid-row: span 1;  
+        grid-column: span 1;
+        background: pink;
+    }
+
+    .nine {
+        grid-area: 9;
+        grid-row: span 1;  
+        grid-column: span 1;
+        background: pink;
+    }
+
+    .ten {
+        grid-area: 10;
+        grid-row: span 2;  
+        grid-column: span 1;
+        background: pink;
+    }
+
+    .eleven {
+        grid-area: 11;
+        grid-row: span 2;  
+        grid-column: span 1;
+        background: pink;
+    }
+  
+  }
+  
